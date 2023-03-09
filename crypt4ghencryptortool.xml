@@ -1,14 +1,17 @@
-<tool id="crypt4ghencryptortool" name="Crypt4GH Encryptor" version="0.1.0" python_template_version="3.5">
+<tool id="crypt4ghencryptortool" name="Crypt4GH Encrypt" version="0.1.0" python_template_version="3.5">
     <requirements>
+        ## Iirc we don to need any requrement
     </requirements>
-    <command detect_errors="exit_code"><![CDATA[
-        TODO: Fill in command template.
-    ]]></command>
+    <command detect_errors="exit_code">
+        touch decryptedFile.txt
+    </command>
     <inputs>
+       ## <param name="input1" type="data" label="Input" help="Input for the python encrypt script" />
     </inputs>
     <outputs>
+        ## <data name="outfile" label="${tool.name} on ${on_string}" format="Insert desired format">
     </outputs>
-    <help><![CDATA[
-        TODO: Fill in help.
-    ]]></help>
+    <help>
+        <description>Crypth4GH Encryption Tool</description>
+    </help>
 </tool>
